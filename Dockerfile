@@ -16,4 +16,5 @@ FROM node:20
 
    # Install modules and start the application
    RUN npm install
+   EXPOSE 3000
    CMD ["npm", "start"]
