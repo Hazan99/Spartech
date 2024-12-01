@@ -7,7 +7,7 @@ FROM node:20
    RUN apt-get update && apt-get install -y wget unzip && apt-get clean
 
    # Retrieve the specific zip file from the GitHub repository using wget
-   RUN wget -O deploy.zip https://github.com/Hazan99/Spartech/raw/main/Queen_Anita-V3.zip
+   RUN wget -O deploy.zip https://github.com/Hazan99/codes/raw/main/Queen_Anita-V3.zip
 
    # Extract the contents of the downloaded zip file
    RUN unzip deploy.zip && rm deploy.zip
