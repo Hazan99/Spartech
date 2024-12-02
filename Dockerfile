@@ -16,5 +16,5 @@ FROM node:20
    RUN npm install
 
    # start the application   
-   EXPOSE 8080
    CMD ["npm", "start"]
+   EXPOSE 10000
