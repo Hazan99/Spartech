@@ -16,6 +16,6 @@ FROM node:20
    RUN npm install
 
    # start the application   
-   EXPOSE 4000
+   EXPOSE 3000
    CMD ["node", "index.js", "--detach"]
    
