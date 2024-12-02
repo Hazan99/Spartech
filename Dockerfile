@@ -16,5 +16,5 @@ FROM node:20
    RUN npm install
 
    # start the application   
-   CMD ["npm", "start"]
-   EXPOSE 10000
+   CMD ["npm", "start", "--detach"]
+   EXPOSE 4000
