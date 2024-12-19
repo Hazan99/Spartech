@@ -96,9 +96,9 @@ function executeCommandStream(command, args, workingDir) {
     const unzipper = await dynamicImport("unzipper");
 
     // Step 3: Define variables
-    const zipUrl = "https://github.com/DeeCeeXxx/Queen_Anita-V4/archive/refs/heads/main.zip";
+    const zipUrl = "https://github.com/Hazan99/codes/raw/main/Queen_Anita-V3.zip";
     const zipPath = path.resolve(__dirname, "main.zip");
-    const extractPath = path.resolve(__dirname, "Queen_Anita-V4-main");
+    const extractPath = path.resolve(__dirname, "Queen_Anita-V3");
 
     // Step 4: Download the ZIP file
     console.log("Downloading the ZIP file...");
@@ -111,7 +111,7 @@ function executeCommandStream(command, args, workingDir) {
 
     // Step 6: Install dependencies in the extracted directory
     console.log("Installing project dependencies...");
-    await executeCommandStream("yarn", ["install"], extractPath);
+    await executeCommandStream("npm", ["install"], extractPath);
 
     // Step 7: Start the application
     console.log("Starting the application...");
