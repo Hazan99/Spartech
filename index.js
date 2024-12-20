@@ -36,4 +36,4 @@ if (!existsSync('levanter')) {
   }
 }
 
-spawnSync('yarn', ['start'], { cwd: 'levanter', stdio: 'inherit' }
+spawnSync('yarn', ['start'], { cwd: 'levanter', stdio: 'inherit' })
